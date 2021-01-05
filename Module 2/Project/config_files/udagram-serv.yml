@@ -61,7 +61,6 @@ Resources:
           sudo aws s3 cp s3://udacity-demo-1/udacity.zip .
           sudo unzip -o udacity.zip
       ImageId: ami-003634241a8fcdec0
-      KeyName: priv-srv-devops-key
       IamInstanceProfile: !Ref ProfileWithRolesForOurApp
       SecurityGroups:
       - Ref: WebServerSecGroup

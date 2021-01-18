@@ -12,7 +12,7 @@ jobs:
     steps:
       - run:
           name: echo "using print_rjl env var"
-          command: echo $print_rjl
+          command: echo $PRINT_RJL
   print_hello:
     docker:
       - image: "circleci/node:13.8.0"

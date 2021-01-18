@@ -11,7 +11,7 @@ jobs:
       - image: "circleci/node:13.8.0"
     steps:
       - run:
-          command: echo print_rjl
+          command: echo $print_rjl
   print_hello:
     docker:
       - image: "circleci/node:13.8.0"

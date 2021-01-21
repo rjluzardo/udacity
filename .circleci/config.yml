@@ -16,7 +16,7 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            - /output.txt
+            - target/output.txt
   print_output_file:
     docker:
       - image: "circleci/node:13.8.0"
@@ -25,7 +25,7 @@ jobs:
           at: /tmp/workspace
       - run:
           name: "print_output_file"
-          command: print output.txt
+          command: cat output.txt
 
 workflows:
   # Name the workflow "welcome"

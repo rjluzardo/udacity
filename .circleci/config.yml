@@ -12,7 +12,7 @@ jobs:
     steps:
       - run:
           name: "save_hello_world_output"
-          command: echo "text to output here" > output.txt
+          command: echo "text to output here" > /tmp/workspace/output.txt
       - persist_to_workspace:
           root: /tmp/workspace
           paths:

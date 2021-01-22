@@ -22,10 +22,10 @@ jobs:
       - image: "circleci/node:13.8.0"
     steps:
       - attach_workspace:
-          at: ~/output.txt
+          at: ~/
       - run:
           name: "print_output_file"
-          command: cat output.txt
+          command: cat ~/output.txt
 
 workflows:
   # Name the workflow "welcome"
